@@ -1,0 +1,30 @@
+diff --git a/build.gradle b/build.gradle
+index 3cd2d15c..9aa7cee6 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -9,7 +9,7 @@ plugins {
+ 	id 'eclipse'
+ 	id 'idea'
+ 	id 'maven-publish'
+-	id 'fabric-loom' version '0.4.28' apply false
++	id 'fabric-loom' version '0.4-SNAPSHOT' apply false
+ 	id 'net.minecrell.licenser' version '0.4.1'
+ 	id "org.ajoberstar.grgit" version "3.1.1"
+ 	id 'com.matthewprenger.cursegradle' version "1.4.0"
+diff --git a/settings.gradle b/settings.gradle
+index d3d94dfe..15a9d1fc 100644
+--- a/settings.gradle
++++ b/settings.gradle
+@@ -2,11 +2,11 @@ pluginManagement {
+ 	repositories {
+ 		jcenter()
+ 		gradlePluginPortal()
++		mavenLocal()
+ 		maven {
+ 			name = 'Fabric'
+ 			url = 'https://maven.fabricmc.net/'
+ 		}
+-		mavenLocal()
+ 	}
+ }
+ 
